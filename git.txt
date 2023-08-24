@@ -1,0 +1,14 @@
+
+Perintah untuk pertama kali upload / push ke repository
+
+1. git init -> digunakan untuk menginisiasi folder tersebut.
+2. git commit -m "pesanmu" -> memberikan pesan/informasi apa yang di upload.
+3. git remote add origin hhtps://https://github.com/almabonitaa/day4.git -> untuk memberikan repository tujuan upload.
+4. git add . -> digunakan untuk menandakan kita akan upload semua file dan perubahan-perubahan yang terjadi.
+5. git push origin master -> push/upload semua file dan perubahan-perubahan ke branch=master
+
+Perintah untuk push/upload/update file baru/perubahan pada folder yang sudah terhubung dengan repository
+1. git status -> melihat perubahan2 yang terjadi
+2. git add. -> digunakan untuk menandakan kita akan upload semua file dan perubahan2 yang terjadi
+3. git commit -m "pesanmu" -> memberikan pesan/informasi apa yang diupload
+git push origin master -> push/upload semua file dan perubahan2 ke branch=master.
