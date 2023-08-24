@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir</title>
+
+    <style>
+        h1{
+            color: red;
+            background-color: yellow;
+        }
+        input[type=submit] {
+            color: rgb(96, 171, 186);
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: black;
+            border-radius: 5em;
+        }
+
+
+    </style>
+  </head>
+  <body>
+    <center>
+    <h1>Isi Form ini untuk menjadi temanku!</h1>
+    <!-- 
+        tag form digunakan untuk membuat formulir
+        action untuk tujuan proses data selanjutnya
+        method adalah jenis prosesnya (post/get)
+     -->
+    <form action="/proses_data.php" method="post">
+      <!-- 
+            tag input untuk membuat input box
+            type = text digunakan untuk input dengan jenis teks biasa
+            name adalah variabel yang akan dibaca oleh proses selanjutnya
+            id adalah variable untuk insiasi
+            required untuk menunjukkan bahwa input tersebut bersifat wajib diisi
+            placeholder untuk memberikan arahan atau contoh isian
+         -->
+         <table>
+            <tr>
+                <td><label for="Nama">Nama</label></td>
+                <td>:</td>
+                <td><input type="text" name="nama" id="nama" required placeholder="Nama Lengkap" /></td>
+              </tr>
+        
+              <!-- 
+                    type = email digunakan untuk input jenis email sehingga inputan wajib ada @
+                 -->
+        
+              <tr>
+                <td><label for="email">Email</label></td>
+                <td>:</td>
+                <td><input type="email" name="email" id="email" required placeholder="Email" /></td>
+              </tr>
+        
+              <!-- 
+                    type = password digunakan untuk input password sehingga ketika diketik tidak muncul
+                 -->
+        
+              <tr>
+                <td><label for="Password">Password</label></td>
+                <td>:</td>
+                <td><input type="password" name="password" id="password" /></td>
+              </tr>
+        
+              <!-- 
+                    type = radio digunakan untuk input radio biasanya untuk jenis
+                    value = data yang disimpan ke database
+                 -->
+        
+              <tr>
+                <td><label for="Jenis_Kelamin">Jenis Kelamin</label></td>
+                <td>:</td>
+                <td><input type="radio" name="Jenis_Kelamin" id="Jenis_Kelamin" value="Perempuan" />Perempuan <input type="radio" name="Jenis_Kelamin" id="Jenis_Kelamin" value="Laki-laki" />Laki-laki</td>
+              </tr>
+        
+              <!-- 
+                    type = radio digunakan untuk input pilihan banyak
+                 -->
+        
+              <tr>
+                <td><label for="asal_kota">Asal Kota</label></td>
+                <td>:</td>
+                <td>
+                  <select name="asal_kota" id="asal_kota">
+                    <option value="">-- pilih --</option>
+                    <option value="Banyumas">Banyumas</option>
+                    <option value="Cilacap">Cilacap</option>
+                    <option value="Tangerang">Tangerang</option>
+                    <option value="Yogyakarta">Yogyakarta</option>
+                    <option value="Banjarnegara">Banjarnegara</option>
+                  </select>
+                </td>
+              </tr>
+        
+              <!--  
+                    type = checkbox digunakan untuk input yang bisa dicheckllist banyak
+                 -->
+        
+              <tr>
+                <td><label for="Hobi">Hobi</label></td>
+                <td>:</td>
+                <td>
+                  <input type="checkbox" name="hobi" id="hobi" value="Membaca" />Membaca <input type="checkbox" name="hobi" id="hobi" value="Menulis" />Menulis <input type="checkbox" name="hobi" id="hobi" value="Basket" />Basket
+                  <input type="checkbox" name="hobi" id="hobi" value="Tidur" />Tidur
+                </td>
+              </tr>
+        
+              <!-- 
+                    textarea digunakan untuk input teks yang panjang
+                 -->
+
+                 <tr>
+              <td> <label for="Alamat">Alamat</label></td>
+              <td>:</td>
+              <td><textarea name="Alamat" id="alamat" cols="30" rows="10"></textarea></td>
+                 </tr>
+                 <tr>
+                    <td colspan="3">
+                    <center>
+                        <input type="submit" name="" id="" value="SUBMIT" />
+                    </center>
+                    </td>
+                 </tr>
+              <!-- <button>submit</button> -->
+            </form>
+        </center>
+         </table>
+  </body>
+</html>
